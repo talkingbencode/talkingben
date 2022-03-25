@@ -14,7 +14,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-    await client.change_presence(activity=discord.Game(name="$help | Talking Ben 2.0 Soon"))
+    await client.change_presence(activity=discord.Game(name="YOUR STATUS"))
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -49,4 +49,4 @@ async def on_message(message):
         await message.channel.send('`$support - support server`') 
 
   
-client.run('BOT_TOKEN')
+client.run('TOKEN')
